@@ -12,7 +12,9 @@ public:
     float threshold;
     float displacement;
 
-    Material(Program* program, Texture* textureDiff=nullptr);
+    Material(Program* program,
+             Texture* textureDiff=nullptr,
+             vec3 specular=vec3(1.0f), vec3  ambient=vec3(0.6f), vec3 emissive=vec3(0.3f), float shininess=3.0f);
     virtual ~Material();
 
     virtual void update() const;

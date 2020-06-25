@@ -12,7 +12,7 @@ void surfaceCreated(AAssetManager* aAssetManager) {
 
 void surfaceChanged(int width, int height) {
     glViewport(0, 0, width, height);
-    Scene::screen(width, height);
+//    Scene::screen(width, height);
 }
 
 void drawFrame(float deltaTime) {
