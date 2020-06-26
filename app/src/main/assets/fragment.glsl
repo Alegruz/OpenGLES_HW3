@@ -85,4 +85,5 @@ void main()
 
     // final output color with alpha
     fragColor = vec4(ceil(5.0f * (diff + spec + ambi)) / 5.0f, alpha);
+//    fragColor = vec4(albedo.rgb, alpha);
 }

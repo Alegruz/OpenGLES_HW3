@@ -330,6 +330,7 @@ void Scene::update(float deltaTime) {
                               * toMat4(mix(quaternionPrevRotationX, quaternionNextRotationX, ratio))
                               * toMat4(mix(quaternionPrevRotationY, quaternionNextRotationY, ratio));
         sBoneToWorld[jointIdx] = sBoneToWorld[jParents[jointIdx]] * animation[jointIdx];
+//        sBoneToWorld[jointIdx] = sBoneToWorld[jParents[jointIdx]];
     }
     // invoke vertex shader for skinning
 
@@ -375,6 +376,6 @@ void Scene::update(float deltaTime) {
 //
 //    Scene::lineDraw->load(skeletonPos, skeletonIndex);
 //    Scene::lineDraw->draw();
-//
+
     Scene::plain->draw();
 }
